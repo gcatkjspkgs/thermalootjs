@@ -4,6 +4,6 @@
     
     "versions": [8, 9],
     "modloaders": ["forge"],
-    "dependencies": ["mod:thermal", "kjspkg-compat-layer"],
+    "dependencies": ["mod:cofh_core", "mod:thermal", "kjspkg-compat-layer"],
     "incompatibilities": ["mod:thermaloot"]
 }
