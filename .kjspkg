@@ -1,5 +1,5 @@
 {
-    "author": "G_cat",
+    "author": "G_cat (KubeJS port), ChiefArug (Original mod)",
     "description": "A port of the Thermaloot mod by ChiefArug to KubeJS. Original mod link: https://curseforge.com/minecraft/mc-mods/thermaloot",
     
     "versions": [8, 9],
