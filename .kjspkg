@@ -1,0 +1,9 @@
+{
+    "author": "G_cat",
+    "description": "A port of the Thermaloot mod by ChiefArug to KubeJS. Original mod link: https://curseforge.com/minecraft/mc-mods/thermaloot",
+    
+    "versions": [8, 9],
+    "modloaders": ["forge"],
+    "dependencies": ["mod:thermal", "kjspkg-compat-layer"],
+    "incompatibilities": ["mod:thermaloot"]
+}
