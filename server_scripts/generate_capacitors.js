@@ -73,10 +73,10 @@ const computeNbt = item => { // Compute nbt
 
 // Call computeNbt when player opens a chest or their inventory changes
 global.kjspkgCompatLayer.legacyOnEvent("player.chest.opened", event => {
-	for (let i = 0; i < (global.kjspkgCompatLayer.versionId==9 ? event.inventory.containerSize : event.inventory.size); i++) 
-		computeNbt(global.kjspkgCompatLayer.versionId==9 ? event.inventory.getItem(i) : event.inventory.get(i))
+	for (let i = 0; i < (global.kjspkgCompatLayer.versionId>=9 ? event.inventory.containerSize : event.inventory.size); i++) 
+		computeNbt(global.kjspkgCompatLayer.versionId>=9 ? event.inventory.getItem(i) : event.inventory.get(i))
 })
 global.kjspkgCompatLayer.legacyOnEvent("player.inventory.changed", event => {
-	for (let i = 0; i < (global.kjspkgCompatLayer.versionId==9 ? event.player.inventory.containerSize : event.player.inventory.size); i++) 
-		computeNbt(global.kjspkgCompatLayer.versionId==9 ? event.player.inventory.getItem(i) : event.player.inventory.get(i))
+	for (let i = 0; i < (global.kjspkgCompatLayer.versionId>=9 ? event.player.inventory.containerSize : event.player.inventory.size); i++) 
+		computeNbt(global.kjspkgCompatLayer.versionId>=9 ? event.player.inventory.getItem(i) : event.player.inventory.get(i))
 })
